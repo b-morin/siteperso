@@ -54,10 +54,6 @@ echo "La page demandee n'existe pas";
 <?php
 }
 ?>
-<!-- 
-	5 (optional). This is the markup for the controlbar. The conrolbar is tied to the expander
-	in the script tag at the top of the file.
--->
 <div id="controlbar" class="highslide-overlay controlbar">
 	<a href="#" class="previous" onclick="return hs.previous(this)" title="Previous (left arrow key)"></a>
 	<a href="#" class="next" onclick="return hs.next(this)" title="Next (right arrow key)"></a>
