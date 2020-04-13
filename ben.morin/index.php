@@ -23,20 +23,10 @@
 <body>
 	<h1>http://ben.morin.free.fr</h1>
 
-	<?php
-	function linkdir ($dir) {
-		$dir = rtrim ($dir, '/');
-		$l = array('.', '..','Thumbs.db','');
-		$dossier= opendir($dir);
-		while (($fichier = readdir($dossier))) {
-			if (!in_array($fichier, $l)){
-			echo "<a href=\"gallery.php?repertoire=".$fichier."\">".$fichier."</a><br>";
-		}
-		}
-		echo "<br>";
-	}
-	$repsimages="./gallery";
-	?>
+<?php
+require 'functions.php';
+$repsimages="./gallery";
+?>
 
 	<table cellpadding="25">
 		<tr>
@@ -47,8 +37,8 @@
 				<?php
 				echo "<p>Cliquer sur le répertoire :</p>";
 				linkdir ($repsimages);
-				echo "<p>Autres fichiers partag&eacute;s : <a href=\"share\" target=_blank>Share</a></p>";
-				echo "<p>Mes projets : <a href=\"share\">Share</a></p>";
+				echo "<p>Autres fichiers partag&eacute;s : <a href=\"share.php\">Share</a></p>";
+				echo "<p>Mes projets : <a href=\"https://github.com/b-morin\" target=_blank>GitHub</a>&nbsp;<img src=\"./github.png\" width='15' height='15'></p>";
 				?>
 			</td>
 		</tr>
