@@ -1,0 +1,29 @@
+#body {font-family:"Trebuchet MS", Verdana, "Lucida Grande", Tahoma, Helvetica, Sans-Serif; font-size:15px; background-color:#FFFFFF; background-image:url('fond.jpg'); background-repeat:repeat-y;}
+
+#menu {position:absolute; width:200px; top:20px; background-color:#FEB308; border-style:ridge; border-width:3px;}
+.menu {font-family:"Trebuchet MS", Verdana, "Lucida Grande", Tahoma, Helvetica, Sans-Serif; font-size:18px; text-align:center; padding:8px 8px 8px 15px;}
+
+#valid {position:absolute; left:20px; top:870px;}
+
+#main {position:absolute; left:220px; top:20px; width:750px; padding:20px; text-align:center;}
+#main2 {position:absolute; left:220px; top:20px; width:750px; padding:20px; text-align:left;}
+
+a:link {text-decoration:none; color:#000000; font-weight:bold;}
+a:active {text-decoration:none; color:#000000; font-weight:bold;}
+a:visited {text-decoration:none; color:#000000; font-weight:bold;}
+a:hover {text-decoration:none; color:#000000; font-weight:bold;}
+
+a.survol:link {background-color:#FEB308; width:170px; margin-top:5px; padding:2px; display:block;}
+a.survol:active {background-color:#FEB308; width:170px; margin-top:5px; padding:2px; display:block;}
+a.survol:visited {background-color:#FEB308; width:170px; margin-top:5px; padding:2px; display:block;}
+a.survol:hover {background-color:#93939F; width:170px; margin-top:5px; padding:2px; display:block;}
+
+img {border:0px;}
+
+h1 {text-align:center; font-size:24px; padding-bottom:20px;}
+h2 {font-size:20px;text-align:left;}
+h3 {text-align:left;}
+h4 {text-align:center; font-size:17px; font-style:italic;}
+p {text-align:justify;}
+.center {text-align:center;}
+li {text-align:left;}
