@@ -1,25 +1,8 @@
- <head>
-  <title>Benoit Morin - Gallerie photos</title>
-  <link rel="stylesheet" media="screen" type="text/css" href="style/style.css" />
-  <link rel="stylesheet" media="screen" type="text/css" href="style/gallery.css" />
-  
-  <script type="text/javascript" src="highslide/highslide.js"></script>
-  <script type="text/javascript">
-	hs.registerOverlay(
-    	{
-    		thumbnailId: null,
-    		overlayId: 'controlbar',
-    		position: 'top right',
-    		hideOnMouseOut: true
-		}
-	);
-    hs.graphicsDir = '../highslide/graphics/';
-    hs.outlineType = 'rounded-white';
-    hs.captionEval = 'this.thumb.title';
-</script>
- </head>
-<div id="marge_de_10">
+<?php
+include 'header.php';
+?>
 
+<div id="marge_de_10">
 
 <?php
 
@@ -33,15 +16,11 @@ $repsimages="./gallery/"."$bidule";
 //si la variable existe on affiche sa valeur
 echo "<h1>".$bidule."</h1>";
 ?>
-<p>
-<a href="index.php">Retour a l'accueil</a>
-</p>
+<!--p><a href="index.php">Retour a l'accueil</a></p-->
 <?php
 recursive_readdir ($repsimages);
 ?>
-<p>
-<a href="index.php">Retour a l'accueil</a>
-</p>
+<p><a href="index.php">Retour a l'accueil</a></p>
 <?php
 
 } else {
