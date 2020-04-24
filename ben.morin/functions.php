@@ -13,10 +13,15 @@ function countfile($dir) {
 }
 
 function recursive_readdir ($dir,$image=True) {
+	if(stristr($dir, '..') == TRUE) {
+		echo "Petit malin...";
+		die;
+	}
 	$dir = rtrim ($dir, '/');
-	$repvignettes="thumb";
-	$dossier = (is_dir ($dir))?opendir($dir):exit;
+	$repvignettes="thumb";	
 	$l = array('.', '..','Thumbs.db','',$repvignettes);
+	$dossier = (is_dir ($dir))?opendir($dir):exit;
+
 	while (($fichier = readdir($dossier))) {
 		if (!in_array( $fichier, $l)){
 			if ($dir=="./gallery") {

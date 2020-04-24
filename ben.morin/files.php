@@ -9,7 +9,7 @@ if (isset($_POST['login']) && !empty($_POST['username']) && !empty($_POST['passw
 		$_SESSION['valid'] = true;
 		$_SESSION['timeout'] = time();
 		$_SESSION['username'] = $username;
-		$rep="./share";
+		$rep=$file;
 		echo recursive_readdir($rep,False);
 		$a=countfile($rep);
 		echo ($a!=0)?"":"Aucun fichier en partage";

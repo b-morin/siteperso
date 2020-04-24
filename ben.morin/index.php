@@ -2,7 +2,7 @@
 
 unset($_SESSION["username"]);
 unset($_SESSION["password"]);
-header('Refresh: 2; URL = index.php');
+//header('Refresh: 2; URL = index.php');
 
 require 'functions.php';
 include 'header.php';

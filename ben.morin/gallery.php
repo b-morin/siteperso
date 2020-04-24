@@ -4,7 +4,20 @@ require 'functions.php';
 
 if(isset($_REQUEST['repertoire'])){
 	$page=$_REQUEST['repertoire'];
-	$repsimages="./gallery/"."$page";
+	/*
+	if(stristr($page, 'coucou') == TRUE) {
+		echo $page;
+		die;
+	}
+	
+
+	if ($page=='..' or $page=='../') {
+		die;
+	}
+	else {*/
+	
+		$repsimages="./gallery/"."$page";
+	//}
 	recursive_readdir ($repsimages);
 } else
 	echo "La page demandee n'existe pas";
